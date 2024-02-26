@@ -1,0 +1,38 @@
+//deklarasi variabel
+
+2 const tombol = document.querySelector(".container-tombol");
+
+4
+
+3 const layar = document.querySelector("#layar");
+
+5 // jika tombol angka di klik oleh user
+
+6 tombol.addEventListener("click", function (e) {
+
+7 let tomboldiClick = e.target;
+
+8 let nilaiTombol = tomboldiClick.innerText;
+
+9
+
+10 //jika tombol C di klik oleh user
+
+
+11 if (nilaiTombol == "C") {
+
+12 layar.value = "";
+
+13 } else if (nilai Tombol == "DEL") {
+
+14 layar.value = layar.value.slice(0, -1);
+
+15 } else if (nilai Tombol == "=") {
+
+16 layar.value = eval(layar.value);
+
+17} else {
+
+18 layar.value = layar.value + nilai Tombol;
+}
+});
